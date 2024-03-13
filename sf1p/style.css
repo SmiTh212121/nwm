@@ -1,0 +1,706 @@
+body {
+  background-color: rgb(23,20,27);
+  
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+main {
+  margin-top: 150px; 
+  padding: 20px;
+  align-items: center;
+}
+
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: rgb(23,20,27);
+  font-size: 30px; 
+  border-bottom: 1px solid black;
+}
+ 
+.nav.navbar-nav {
+  list-style: none;
+  padding: 0;
+  text-align: center; 
+}
+
+.nav.navbar-nav li {
+  display: inline;
+  margin: 0 10px; 
+  padding: 30px;
+}
+
+.nav.navbar-nav li a {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s; 
+  padding-top: 30px;
+}
+
+.nav.navbar-nav li a:hover {
+  color: rgb(17,117,192); 
+}
+
+.collapse.navbar-collapse {
+  background-color: rgb(23,20,27);
+}
+
+
+.navbar {
+  height: 140px; 
+  background-color: rgb(23,20,27);
+}
+.logo img {
+  height: 130px;   
+  
+  
+}
+@media screen and (max-width: 600px) {
+  
+  .logo img {
+    height: 100px; 
+    position: relative;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .navbar-header{
+    position: fixed;
+    left: 45px;
+    top: 20px;
+  }
+  
+  .navbar-collapse{
+    padding-top: 80px;
+    padding-right: 0px;
+  }
+
+}
+
+
+
+.logo {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+.sidenav {
+  width: 15%; 
+  background-color: rgb(23,20,27);
+}
+
+.navbar-toggle {
+  margin-top: 10%;
+}
+
+/*TIMER*/
+.countdown-wrapper {
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  border: 3px solid rgb(17,117,192);;
+  border-radius: 5px;
+}
+
+#embedvidio-9b845eea-b942-41e5-bfba-14d643baed6d {
+  size: 10px;  
+}
+
+.countdown-wrapper .VZivo {
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 600px) {
+  
+  .countdown-wrapper .VZivo {
+    font-size: 300%; 
+  }
+}
+
+.Live{
+  font-size: 8rem;
+}
+@media screen and (max-width: 600px) {
+  
+  .Live {
+    font-size: 300%; 
+  }
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;  
+}
+
+.countdown div {
+  width: 6rem;
+  height: 5rem;
+  margin: 3rem 3rem 9rem 4rem;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+@media screen and (max-width: 600px) {
+  
+  .countdown div {
+    font-size: 200%; 
+    width: 1rem;
+    text-align: center;
+  }
+}
+
+.countdown div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.24rem; 
+}
+
+.countdown div::after {
+  content: attr(data-content);
+  font-size: 2.2rem;
+  position: absolute;
+  bottom: -5rem;
+}
+/*TIMER*/
+/*Main*/
+/*oblike*/
+.rdeca {
+  width: 100px;
+  height: 200px;
+  background: #E2012D;
+  position: fixed;
+  top: 125px; /* Adjust this value to position vertically */
+  left: 0px; /* Adjust this value to position horizontally */
+  z-index: -1; /* Set z-index to a value lower than other elements */
+}
+
+.rdeca_circle {
+  background: #E2012D;
+  height: 150px;
+  width: 100px;
+  border-bottom-right-radius: 200px;
+  position: fixed;
+  top: 325px; /* Adjust this value to position vertically */
+  left: 0px; /* Adjust this value to position horizontally */
+  z-index: -1; /* Set z-index to a value lower than other elements */
+}
+
+.modra1 {
+  border-bottom: 100px solid rgb(17,117,192);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 500px;
+  position: fixed;
+  bottom: 270px;
+  right: -425px;
+  z-index: -1;
+}
+
+.modra2 {
+  border-bottom: 100px solid rgb(17,117,192);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 500px;
+  position: fixed;
+  bottom: 145px;
+  right: -395px;
+  z-index: -1;
+}
+
+.modra3 {
+  width: 200px;
+  height: 120px;
+  background: rgb(17,117,192);
+  position: fixed;
+  bottom: 0px; /* Adjust this value to position vertically */
+  right: 0px; /* Adjust this value to position horizontally */
+  z-index: -1; /* Set z-index to a value lower than other elements */
+}
+
+.modra3_circle {
+  background: rgb(17,117,192);
+  height: 120px;
+  width: 120px;
+  border-top-left-radius: 200px;
+  position: fixed;
+  bottom: 0px; /* Adjust this value to position vertically */
+  right: 200px; /* Adjust this value to position horizontally */
+  z-index: -1; /* Set z-index to a value lower than other elements */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .rdeca, .rdeca_circle, .modra1, .modra2, .modra3, .modra3_circle  {
+    display: none; /* Hide the element on screens smaller than 768px */
+  }
+}
+
+/*oblike*/
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  position: relative;
+  height: 450px;
+  width: 75%;
+  padding-bottom: 20px;
+}
+
+.calender {
+  border: 3px solid rgb(17,117,192);;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.calender img {
+  width: 100%;
+  height: auto; 
+  
+}
+
+.rezultati{
+  border: 3px solid rgb(17,117,192);;
+  border-radius: 2px; 
+  text-align: center;
+}
+
+.rezultati .rez{
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 500%;
+}
+@media screen and (max-width: 600px) {
+  
+  .rezultati .rez {
+    font-size: 300%; 
+  }
+}
+
+.rezultati img {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.razmikXD {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.dogodki {
+  border: 3px solid rgb(17,117,192);;
+  border-radius: 5px;
+  padding: 20px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.dogodki .dog {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 500%;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .dogodki .dog {
+    font-size: 300%; 
+  }
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px; 
+  overflow: hidden; 
+  width: 100%;
+}
+
+.dogodki .name {
+  left: 20px; 
+  top: 20px; 
+  color: white;
+  font-size: 200%;
+  text-align: left;
+  transition: color 0.3s;
+  text-decoration: none;
+  word-wrap: break-word;
+  flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+  
+  .dogodki .name {
+    font-size: 120%;     
+  }
+}
+.dogodki .name:hover {
+  color: rgb(17,117,192);
+}
+
+.dogodki .date {
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 200%;
+  text-align: right;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  
+  .dogodki .date {
+    font-size: 120%; 
+  }
+}
+.dogodki .date:hover {
+  color: rgb(17,117,192);
+}
+
+.aktualniPrvak{
+  border: 3px solid rgb(17,117,192);
+  border-radius: 5px;
+  padding: 20px ;
+  text-align: center;
+  width: 100%;
+}
+
+.aktualniPrvak h1{
+  color: white;
+  padding-bottom: 20px;
+  font-size: 500%;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  
+  .aktualniPrvak h1 {
+    font-size: 220%; 
+  }
+}
+
+.aktualniPrvak img{
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.dogodki, .countdown-wrapper, .calender, .rezultati, table, .aktualniPrvak:nth-child(1){
+  -webkit-animation:Border 1.5s infinite alternate;
+}
+@-webkit-keyframes Border {
+  0% {border-color: #E2012D;}
+  100% {border-color: rgb(17,117,192);}
+}
+
+
+/*Main*/
+
+/*komisija css*/
+.form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.labelce, .opis, .knof {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+}
+
+.inputi {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    color: black;
+}
+
+.opis {
+  height: 100px;
+  color: black;
+}
+
+.knof {
+  background-color: rgb(17,117,192);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.knof:hover {
+  background-color: rgb(17,117,250);
+  
+}
+
+/*komisija css*/
+
+/*footer css*/
+footer {
+  background-color: rgb(23,20,27);
+  color: #fff;
+  padding: 50px 0;
+  border-top: 1px solid black;
+}
+
+.noga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  padding-right: 50px;
+}
+
+.footer-links a {
+  color: rgb(17,117,192);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 30px; 
+}
+
+.footer-links a:hover {
+  color: rgb(14, 59, 117);
+}
+
+.donation-button .donacija {
+  background-color: #E2012D;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px; 
+}
+
+.donation-button .donacija i {
+  margin-right: 5px; 
+}
+
+.donation-button .donacija:hover {
+  background-color: #db1b42;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .noga {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .footer-links,
+  .donation-button {
+    margin-bottom: 20px; 
+    padding-right: 0;
+  }
+
+  .footer-links,
+  .donation-button {
+    text-align: center; 
+  }
+}
+/*footer css*/
+/*sezone css*/
+.shadow__btn {
+  padding: 10px 70px 10px 70px;
+  border: none;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+#cyan {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+#cyan:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+
+#red {
+  background: rgb(255, 0, 0);
+  box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+#red:hover {
+  box-shadow: 0 0 5px rgb(255, 0, 0),
+              0 0 25px rgb(255, 0, 0),
+              0 0 50px rgb(255, 0, 0),
+              0 0 100px rgb(255, 0, 0);
+}
+
+#orange {
+  background: rgb(255, 165, 0);
+  box-shadow: 0 0 25px rgb(255, 165, 0);
+}
+
+#orange:hover {
+  box-shadow: 0 0 5px rgb(255, 165, 0),
+              0 0 25px rgb(255, 165, 0),
+              0 0 50px rgb(255, 165, 0),
+              0 0 100px rgb(255, 165, 0);
+}
+
+#green {
+  background: rgb(0, 255, 0);
+  box-shadow: 0 0 25px rgb(0, 255, 0);
+}
+
+#green:hover {
+  box-shadow: 0 0 5px rgb(0, 255, 0),
+              0 0 25px rgb(0, 255, 0),
+              0 0 50px rgb(0, 255, 0),
+              0 0 100px rgb(0, 255, 0);
+}
+
+#blue {
+  background: rgb(0, 17, 255);
+  box-shadow: 0 0 25px rgb(0, 17, 255);
+}
+
+#blue:hover {
+  box-shadow: 0 0 5px rgb(0, 17, 255),
+              0 0 25px rgb(0, 17, 255),
+              0 0 50px rgb(0, 17, 255),
+              0 0 100px rgb(0, 17, 255);
+}
+
+#yellow {
+  background: rgb(169, 172, 0);
+  box-shadow: 0 0 25px rgb(169, 172, 0);
+}
+
+#yellow:hover {
+  box-shadow: 0 0 5px rgb(169, 172, 0),
+              0 0 25px rgb(169, 172, 0),
+              0 0 50px rgb(169, 172, 0),
+              0 0 100px rgb(169, 172, 0);
+}
+
+#purple {
+  background: rgb(128, 0, 128);
+  box-shadow: 0 0 25px rgb(128, 0, 128);
+}
+
+#purple:hover {
+  box-shadow: 0 0 5px rgb(128, 0, 128),
+              0 0 25px rgb(128, 0, 128),
+              0 0 50px rgb(128, 0, 128),
+              0 0 100px rgb(128, 0, 128);
+}
+
+#pink {
+  background: rgb(255, 1, 149);
+  box-shadow: 0 0 25px rgb(255, 1, 149);
+}
+
+#pink:hover {
+  box-shadow: 0 0 5px rgb(255, 1, 149),
+              0 0 25px rgb(255, 1, 149),
+              0 0 50px rgb(255, 1, 149),
+              0 0 100px rgb(255, 1, 149);
+}
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px;
+  border: 3px solid rgb(17,117,192);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+td {
+  padding-right: 60px; 
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  table {
+    border-spacing: 10px; 
+    padding: 5px; 
+  }
+
+  td {
+    padding: 0 10px; 
+  }
+  
+  .shadow__btn{
+    font-size: 15px;
+    padding: 10px 30px 10px 30px;
+  }
+}
+/*sezone css*/
+/*scroolbar style*/
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(23,20,27);
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(43, 41, 46);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(69, 68, 70);
+}
+/*scroolbar style*/

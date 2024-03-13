@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tilen Šmid"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Slovenski F1 Pokal</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="logo"><img src="slike/SFP-logo-final-svg-02.svg" alt="SF1P"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="1.html">Sezona</a></li>
+          <li><a href="komisija.html">Komisija</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1TfOSYSOxotr_oKP1oJw4sTO_MeHwHM-I8u6KWH7cpUg/edit#gid=345279385">Skupni seštevek</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1anEI9dZieFILSZu7aKqOdREgwJXlt_kMgeusu9F04Jw/edit?usp=sharing ">Statistika</a></li>
+          <li><a href="5.html">Prijava</a></li>
+          <li><a href="6.html">O nas</a></li>
+        </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="form">
+            <label for="reporter" class="labelce">Reporter:</label>
+            <input type="text" id="reporter" placeholder="Vnesi svoje ime" class="inputi">
+            
+            <label for="drivers" class="labelce">Vpleteni vozniki:</label>
+            <input type="text" id="drivers" placeholder="Vnesi ime voznika/voznikov" class="inputi">
+            
+            <label for="lap" class="labelce">Krog:</label>
+            <input type="text" id="lap" placeholder="Vnesi krog incidenta" class="inputi">
+            
+            <label for="turn" class="labelce">Ovinek:</label>
+            <input type="text" id="turn" placeholder="Vnesi ovinek incidenta" class="inputi">
+            
+            <label for="link" class="labelce">Link:</label>
+            <input type="text" id="link" placeholder="Vnesi povezavo do posnetka incidenta" class="inputi">
+            
+            <label for="description" class="labelce">Opis incidenta:</label>
+            <textarea id="description" placeholder="Vnesi opis" class="opis"></textarea>
+            
+            <button onclick="submitForm()" class="knof">Submit</button>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
